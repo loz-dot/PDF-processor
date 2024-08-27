@@ -1,0 +1,68 @@
+/* Apply a nice pink background to the whole page */
+body {
+    background-color: #ffebf0; /* Light pink background */
+    color: #000; /* Default text color for contrast */
+    font-family: Arial, sans-serif; /* Clean font for better readability */
+    text-align: center; /* Center align all text */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* Style for the content box */
+#content {
+    display: inline-block; /* Center the content box horizontally */
+    background-color: #f8c6d0; /* Lighter pink background for the box */
+    padding: 20px; /* Add some space inside the box */
+    border-radius: 8px; /* Rounded corners for a softer look */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    margin-top: 50px; /* Space above the box */
+}
+
+/* Style for headings and paragraphs inside the content box */
+#content h1, #content h3, #content p {
+    color: #fff; /* White text color */
+    text-shadow: 1px 1px 2px #000; /* Black text shadow for better readability */
+    margin: 0 0 15px; /* Margin below elements */
+}
+
+/* Style for form elements */
+form {
+    margin-top: 20px; /* Space above the form */
+}
+
+/* Style for labels and inputs */
+label, input, button {
+    display: block; /* Display each element on a new line */
+    margin: 10px auto; /* Center elements and add space around */
+    text-align: center; /* Center text inside form elements */
+}
+
+input[type="file"], input[type="text"], button {
+    width: 80%; /* Set a standard width for inputs and button */
+    max-width: 400px; /* Limit the maximum width */
+    padding: 10px; /* Add padding inside input fields */
+    border: 1px solid #ccc; /* Light border around inputs */
+    border-radius: 4px; /* Rounded corners for inputs */
+}
+
+button {
+    background-color: #ff6f6f; /* Pink background for the button */
+    color: white; /* White text on the button */
+    border: none; /* Remove default border */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Larger text size */
+}
+
+button:hover {
+    background-color: #ff4c4c; /* Darker pink on hover */
+}
+
+/* Basic styling for the loading GIF */
+#loading {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
