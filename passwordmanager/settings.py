@@ -26,7 +26,7 @@ SECRET_KEY = "django-insecure-a3xg13mm10ykgt^8yrj@&0h_sr0h@p!nft8g1cs4^q0nj=zs-$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.herokuapp.com']
+ALLOWED_HOSTS = ['.herokuapp.com', 'pdf-to-anki-f74f96ea7927.herokuapp.com', 'localhost']
 
 
 # Application definition
