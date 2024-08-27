@@ -118,6 +118,7 @@ def full_workflow(request):
                 get_in_json_form(summary, deck_name)
 
                 print("It should all be successful")
+                os.remove(file_path)
                 return render(request, 'success.html')
             
     except Exception:       
