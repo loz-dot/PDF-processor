@@ -21,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-a3xg13mm10ykgt^8yrj@&0h_sr0h@p!nft8g1cs4^q0nj=zs-$"
+SECRET_KEY = os.getenv("DJANGO_API_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -124,7 +124,7 @@ STATIC_URL = "static/"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-GROQ_API_KEY = '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'
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
